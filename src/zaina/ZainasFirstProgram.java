@@ -7,6 +7,7 @@ public class ZainasFirstProgram {
         System.out.println("my age is " + myAge);
         String favColor = "sage green";
         System.out.println("my favorite color is " + favColor);
+        System.out.println("Hello there!");
     }
 
 }
