@@ -8,6 +8,6 @@ public class ZainasFirstProgram {
         String favColor = "sage green";
         System.out.println("my favorite color is " + favColor);
         System.out.println("Hello there!");
+        System.out.println("Hello");
     }
-
 }
