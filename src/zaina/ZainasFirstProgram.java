@@ -9,5 +9,7 @@ public class ZainasFirstProgram {
         System.out.println("my favorite color is " + favColor);
         System.out.println("Hello there!");
         System.out.println("Hello");
+        System.out.println("Naim");
+        System.out.println("Hi there");
     }
 }
