@@ -38,4 +38,8 @@ public class CharacterHelper {
     public static boolean isConsonant(char c1){
         return isLetter(c1) &! isVowel(c1);
     }
+
+    public static boolean isSpecial(char c1){
+        return !Character.isLetter(c1) && !Character.isDigit(c1) && !Character.isSpaceChar(c1);
+    }
 }
