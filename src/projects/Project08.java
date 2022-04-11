@@ -23,16 +23,16 @@ public class Project08 {
 
 
     // Task - 3
-    public static Boolean validatePassword(String password){
+    public static boolean validatePassword(String password){
         boolean containsDigit = false, containsUpper = false, containsLower = false, containsSpecial = false, noSpace = false;
 
         if(password.length() >= 8 && password.length() <= 16)
             for (int i = 0; i < password.length(); i++) {
                 char c = password.charAt(i);
-                if(Character.isDigit(c)) containsDigit = true;
-                if(Character.isUpperCase(c)) containsUpper = true;
-                if(Character.isLowerCase(c)) containsLower = true;
-                if(CharacterHelper.isSpecial(c)) containsSpecial = true;
+                if(Character.isDigit(c) && !containsDigit) containsDigit = true;
+                if(Character.isUpperCase(c) && !containsUpper) containsUpper = true;
+                if(Character.isLowerCase(c) && !containsLower) containsLower = true;
+                if(CharacterHelper.isSpecial(c) && !containsSpecial) containsSpecial = true;
                 if(c != ' ') noSpace = true;
             }
          return (containsDigit && containsUpper && containsLower && containsSpecial && noSpace);
