@@ -7,5 +7,6 @@ public class Introduction {
         System.out.println("I am a " + job);
         System.out.println("I am a " + age + " years old");
         System.out.println("I like " + hobby);
+
     }
 }

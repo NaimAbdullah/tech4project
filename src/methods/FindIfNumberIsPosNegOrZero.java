@@ -26,5 +26,6 @@ public class FindIfNumberIsPosNegOrZero {
         String name = ScannerHelper.getANameFromUser();
 
         System.out.println("End Of Program!");
+
     }
 }
