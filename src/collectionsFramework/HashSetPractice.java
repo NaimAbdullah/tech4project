@@ -13,6 +13,7 @@ public class HashSetPractice {
         numbers.add(0);
         numbers.add(-7);
         numbers.add(-55);
+        numbers.add(-55);
         numbers.add(null);
         numbers.add(null);
         numbers.add(null);

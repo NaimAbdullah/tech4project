@@ -12,6 +12,7 @@ public class LinkedHashSetPractice {
         words.add("bar");
         words.add(null);
         words.add("John");
+        words.add("naim");
 
         System.out.println(words);
     }

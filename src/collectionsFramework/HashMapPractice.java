@@ -40,7 +40,13 @@ public class HashMapPractice {
         students.put(7, null);
         students.put(null, null); // This will replace Alex with null
 
+        System.out.println(students.replace(1, "Ahmad"));
+
         System.out.println(students.size()); // 8
         System.out.println(students);
+        System.out.println(students.get(2));
+        System.out.println(students.keySet());
+        System.out.println(students.values());
+        System.out.println(students.containsKey(7));
     }
 }
