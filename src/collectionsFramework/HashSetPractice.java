@@ -1,6 +1,7 @@
 package collectionsFramework;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class HashSetPractice {
@@ -13,12 +14,17 @@ public class HashSetPractice {
         numbers.add(0);
         numbers.add(-7);
         numbers.add(-55);
-        numbers.add(-55);
+        numbers.add(-56);
         numbers.add(null);
         numbers.add(null);
         numbers.add(null);
         numbers.add(null);
 
+//        numbers.removeIf(element -> element.equals(5));
+//        System.out.println(numbers.stream().filter(element -> element < 0).count());
+
+
         System.out.println(numbers);
+
     }
 }

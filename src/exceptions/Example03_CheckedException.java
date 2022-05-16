@@ -21,5 +21,7 @@ public class Example03_CheckedException {
             Thread.sleep(1000); // 2 seconds
             System.out.println(i);
         }
+
+        throw new RuntimeException();
     }
 }
