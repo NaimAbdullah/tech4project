@@ -90,6 +90,5 @@ public class HomeworkR4 {
         System.out.println(Arrays.toString(noA(arr)));
         int[] arr2 = { 7, 4, 11, 23, 17};
         System.out.println(countPrimes(arr2));
-
     }
 }
