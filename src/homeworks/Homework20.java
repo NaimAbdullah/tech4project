@@ -76,10 +76,10 @@ public class Homework20 {
     // Task - 8
     public static ArrayList<String> removeAndReturnCommons(ArrayList<String> list1, ArrayList<String> list2){
         ArrayList<String> arr = new ArrayList<>();
-        for(int i = 0; i < list1.size(); i++){
-            for(int j = 0; j < list2.size(); j++){
-                if(!arr.contains(list1.get(i)) && list1.get(i).equals(list2.get(j)))
-                    arr.add(list1.get(i));
+        for (String s : list1) {
+            for (String value : list2) {
+                if (!arr.contains(s) && s.equals(value))
+                    arr.add(s);
             }
         }
         return arr;
