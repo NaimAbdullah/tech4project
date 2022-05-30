@@ -55,4 +55,8 @@ public class Project08 {
         }
         return validity;
     }
+
+    public static void main(String[] args) {
+        System.out.println(validatePassword("He@ll1 edd"));
+    }
 }

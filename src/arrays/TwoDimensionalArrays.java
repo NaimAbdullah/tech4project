@@ -9,7 +9,8 @@ public class TwoDimensionalArrays {
         String[][] studentGroups = {
                 {"Kaly", "Guluzar", "Melda"},
                 {"Torrie", "David"},
-                {"Abe", "Data"}
+                {"Abe", "Data"},
+                {"naim", "ahmad"}
         };
 
         System.out.println(studentGroups[0][1]); // Guluzar
