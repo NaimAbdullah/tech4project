@@ -46,22 +46,21 @@ public class Homework21 {
 
 
     // Task - 5
-    public static String countSequenceOfCharacters(String s){
-        String str = "";
+    public static String countSequenceOfCharacters(String str) {
+        String sequence = "";
         int count = 1;
-        if (s.length() == 0) return "";
-        else{
-            for (int i = 0; i < s.length() - 1; i++) {
-                count = 1;
-                if ((s.charAt(i)) == (s.charAt(i + 1))){
-                    count ++;
-                    i = i + count - 1;
-                }
-                str += String.valueOf(count) + s.charAt(i);
+        for (int i = 0; i < str.length(); i++) {
+            for (int j = i + 1; j < str.length(); j++) {
+                if (str.charAt(i) == str.charAt(j))
+                    count++;
             }
-            if (!("" + s.charAt(s.length() - 1)).equals(("" + s.charAt(s.length() - 2)))) str += "1" + s.charAt(s.length() - 1);
+            if (!sequence.contains(str.charAt(i) + "")) {
+                sequence += str.charAt(i);
+                sequence += count;
+                count = 1;
+            }
         }
-        return str;
+        return sequence;
     }
 
     public static void main(String[] args) {
@@ -70,7 +69,5 @@ public class Homework21 {
         System.out.println(findSumNumbers("ab110 c045d%"));
         System.out.println(findBiggestNumber("avs#$"));
         System.out.println(countSequenceOfCharacters("aaAAa"));
-
-
     }
 }
