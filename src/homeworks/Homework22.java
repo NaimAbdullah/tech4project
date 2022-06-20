@@ -22,10 +22,23 @@ public class Homework22 {
 
 
     // Task - 2
-    public static int fibonacciSeries2(int num) {
-        return fibonacciSeries1(num)[num - 1];
-    }
+    public static int fibonacciSeries2(int n){
+//        if (a == 1 || a == 2) return 1;
+//        return fibonacciSeries2(a - 1) + fibonacciSeries2(a - 2);
 
+            int[] array = new int[n];
+            int zero = 0, one = 1, sum;
+            for(int i = 0; i <= array.length-1; i++){
+                if(i == 0) array[0] = 0;
+                else if (i == 1) array[1] = 1;
+                else
+                    array[i] += zero;
+                sum = zero + one;
+                zero = one;
+                one = sum;
+            }
+            return array[array.length-1];
+    }
 
     // Task - 3
     public static int[] findUniques(int[] num1, int[] num2) {
