@@ -92,7 +92,7 @@ public class Homework22 {
         System.out.println(Arrays.toString(findUniques(arr1, arr2)));
 
         System.out.println("\n----Task 4----");
-        System.out.println(isPowerOf3(9));
+        System.out.println(isPowerOf3(15));
 
         System.out.println("\n----Task 5----");
         int[] nums = {1, 2, 2, 3};
